@@ -552,6 +552,18 @@ ul .our-team-icons {
   margin: auto;
 }
 
+.is-hidden {
+  display: flex;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+
 .modal-content {
   margin: auto;
   position: relative;
