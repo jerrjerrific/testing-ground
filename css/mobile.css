@@ -55,8 +55,10 @@ button {
 }
 
 .advantages-icon,
-.wawd-images {
+.wawd-images,
+.data-modal {
   display: none;
+  width: inherit;
 }
 
 .body-medium {
