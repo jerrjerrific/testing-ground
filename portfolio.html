@@ -17,24 +17,47 @@
     />
 
     <!-- CSS Folder -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:428px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:769px)"
+      href="css/styles.css"
+    />
   </head>
 
   <body>
     <header>
-      <p class="header-sitename">
-        <a href="index.html"><span class="header-span">WEB</span>STUDIO</a>
-      </p>
+      <a href="index.html" class="header-sitename"
+        ><span class="header-span">WEB</span>STUDIO</a
+      >
       <nav>
         <ul class="header-nav">
-          <li><a href="index.html" rel="Home Page">Studio</a></li>
-          <li><a href="portfolio.html" rel="Portfolio">Portfolio</a></li>
-          <li><a href="#Contacts">Contacts</a></li>
+          <li>
+            <a href="index.html" rel="Home Page" class="page-nav head-link"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a href="portfolio.html" rel="Portfolio" class="page-nav head-link"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="#Contacts" class="page-nav head-link">Contacts</a></li>
         </ul>
       </nav>
       <ul class="header-contact">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="head-link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+110001111111" class="head-link">+11 (000) 111-11-11</a>
+        </li>
       </ul>
     </header>
 
@@ -194,6 +217,7 @@
           <a href="index.html"><span class="footer-span">WEB</span>STUDIO</a>
         </li>
         <li class="footer-socials">Social media</li>
+        <li class="footer-subscribe-title">Subscribe</li>
       </ul>
       <ul class="footer-line2">
         <li class="footer-text">
@@ -245,6 +269,28 @@
               </a>
             </li>
           </ul>
+        </li>
+        <li class="footer-subscribe">
+          <form name="subscribe-form">
+            <input
+              class="footer-input"
+              type="email"
+              name="customer-email"
+              id="footSubscribe"
+              placeholder="E-mail"
+              required
+            />
+            <button class="subscribe-button" type="submit">
+              <ul class="subButtonIcon">
+                <li>Subscribe</li>
+                <li>
+                  <svg class="footer-sub-icon">
+                    <use href="images/icons.svg#icon-paper-plane"></use>
+                  </svg>
+                </li>
+              </ul>
+            </button>
+          </form>
         </li>
       </ul>
     </footer>

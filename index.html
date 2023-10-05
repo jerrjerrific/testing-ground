@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Homepage</title>
     <!-- Normalizer -->
     <link
       rel="stylesheet"
@@ -18,34 +18,158 @@
     />
 
     <!-- CSS Folder -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:428px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:769px)"
+      href="css/styles.css"
+    />
   </head>
 
   <body>
     <header>
-      <p class="header-sitename">
-        <a href="index.html"><span class="header-span">WEB</span>STUDIO</a>
-      </p>
+      <a href="index.html" class="header-sitename"
+        ><span class="header-span">WEB</span>STUDIO</a
+      >
       <nav>
         <ul class="header-nav">
-          <li><a href="index.html" rel="Home Page">Studio</a></li>
-          <li><a href="portfolio.html" rel="Portfolio">Portfolio</a></li>
-          <li><a href="#Contacts">Contacts</a></li>
+          <li>
+            <a href="index.html" rel="Home Page" class="page-nav head-link"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a href="portfolio.html" rel="Portfolio" class="page-nav head-link"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="#Contacts" class="page-nav head-link">Contacts</a></li>
         </ul>
       </nav>
       <ul class="header-contact">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="head-link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+110001111111" class="head-link">+11 (000) 111-11-11</a>
+        </li>
       </ul>
     </header>
 
     <main>
-      <section class="splash-header">
+      <section class="hero">
         <h1>Effective Solutions for Your Business</h1>
-        <button type="button" class="data-modal-open">Order Service</button>
+        <button type="button" class="order-button data-modal-open">
+          Order Service
+        </button>
         <div class="data-modal is-hidden">
           <div class="modal-content">
-            <span class="data-modal-close">&times;</span>
+            <svg class="modal-close-icon data-modal-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+            <!-- replace close span to icon, if possible -->
+            <p class="modal-title">
+              Leave your contacts and we will call you back
+            </p>
+
+            <form name="modal-form">
+              <!-- Name -->
+              <label class="form-field">
+                <span class="form-label">Name</span>
+                <div class="form-input-icon">
+                  <i>
+                    <svg class="form-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-name"></use>
+                    </svg>
+                  </i>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="customer-name"
+                    id=""
+                    required
+                  />
+                </div>
+              </label>
+
+              <!-- Phone -->
+              <label class="form-field">
+                <span class="form-label">Phone</span>
+                <div class="form-input-icon">
+                  <i>
+                    <svg class="form-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </i>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="customer-phone"
+                    id=""
+                    required
+                  />
+                </div>
+              </label>
+
+              <!-- Email -->
+              <label class="form-field">
+                <span class="form-label">Email</span>
+                <div class="form-input-icon">
+                  <i>
+                    <svg class="form-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                  </i>
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    required
+                  />
+                </div>
+              </label>
+
+              <!--  Comments -->
+              <label class="form-field">
+                <span class="form-label">Comments</span>
+                <textarea
+                  class="form-textarea"
+                  name="user-feedback"
+                  rows="8"
+                  placeholder="Text input"
+                ></textarea>
+              </label>
+
+              <!-- Terms and Privacy Policy -->
+              <label class="form-agreement">
+                <input
+                  class="form-checkbox visually-hidden"
+                  type="checkbox"
+                  name="user-terms"
+                  required
+                />
+                <span class="checkmark"></span>
+                <span
+                  >I accept the terms and conditions of the
+                  <a
+                    class="form-terms"
+                    href="#privacy"
+                    target="_blank"
+                    rel="privacy-policy"
+                    >Privacy Policy</a
+                  ></span
+                >
+              </label>
+
+              <!-- Form Button -->
+              <button class="button form-button" type="submit">Send</button>
+            </form>
           </div>
         </div>
       </section>
@@ -62,7 +186,7 @@
                 ></use>
               </svg>
               <h3>Strategy</h3>
-              <p>
+              <p class="body-medium">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -76,7 +200,7 @@
                 ></use>
               </svg>
               <h3>Punctuality</h3>
-              <p>
+              <p class="body-medium">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -90,7 +214,7 @@
                 ></use>
               </svg>
               <h3>Diligence</h3>
-              <p>
+              <p class="body-medium">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -104,7 +228,7 @@
                 ></use>
               </svg>
               <h3>Technologies</h3>
-              <p>
+              <p class="body-medium">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -312,34 +436,54 @@
             <svg class="clients-icon">
               <use
                 href="images/icons.svg#icon-Client-1"
-                width="168px"
-                height="88px"
+                width="104px"
+                height="56px"
               ></use>
             </svg>
           </li>
           <li class="icons">
             <svg class="clients-icon">
-              <use href="images/icons.svg#icon-Client-2"></use>
+              <use
+                href="images/icons.svg#icon-Client-2"
+                width="104px"
+                height="56px"
+              ></use>
             </svg>
           </li>
           <li class="icons">
             <svg class="clients-icon">
-              <use href="images/icons.svg#icon-Client-3"></use>
+              <use
+                href="images/icons.svg#icon-Client-3"
+                width="104px"
+                height="56px"
+              ></use>
             </svg>
           </li>
           <li class="icons">
             <svg class="clients-icon">
-              <use href="images/icons.svg#icon-Client-4"></use>
+              <use
+                href="images/icons.svg#icon-Client-4"
+                width="104px"
+                height="56px"
+              ></use>
             </svg>
           </li>
           <li class="icons">
             <svg class="clients-icon">
-              <use href="images/icons.svg#icon-Client-5"></use>
+              <use
+                href="images/icons.svg#icon-Client-5"
+                width="104px"
+                height="56px"
+              ></use>
             </svg>
           </li>
           <li class="icons">
             <svg class="clients-icon">
-              <use href="images/icons.svg#icon-Client-6"></use>
+              <use
+                href="images/icons.svg#icon-Client-6"
+                width="104px"
+                height="56px"
+              ></use>
             </svg>
           </li>
         </ul>
@@ -352,6 +496,7 @@
           <a href="index.html"><span class="footer-span">WEB</span>STUDIO</a>
         </li>
         <li class="footer-socials">Social media</li>
+        <li class="footer-subscribe-title">Subscribe</li>
       </ul>
       <ul class="footer-line2">
         <li class="footer-text">
@@ -403,6 +548,28 @@
               </a>
             </li>
           </ul>
+        </li>
+        <li class="footer-subscribe">
+          <form name="subscribe-form">
+            <input
+              class="footer-input"
+              type="email"
+              name="customer-email"
+              id="footSubscribe"
+              placeholder="E-mail"
+              required
+            />
+            <button class="subscribe-button" type="submit">
+              <ul class="subButtonIcon">
+                <li>Subscribe</li>
+                <li>
+                  <svg class="footer-sub-icon">
+                    <use href="images/icons.svg#icon-paper-plane"></use>
+                  </svg>
+                </li>
+              </ul>
+            </button>
+          </form>
         </li>
       </ul>
     </footer>
