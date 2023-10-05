@@ -8,8 +8,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
-  width: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 h1 {
@@ -68,7 +67,6 @@ button {
 
 /* Start of Header CSS */
 header {
-  width: 428px;
   height: 70px;
   border: 0px, 0px, 1px, 0px;
   border-bottom: 1px solid rgba(231, 233, 252, 1);
