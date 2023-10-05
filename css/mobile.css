@@ -1,14 +1,15 @@
 /* Start of General CSS */
 
 body {
-  font-family: Roboto;
+  color: #434455;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 0 auto;
   width: 428px;
-  margin: auto;
 }
 
 h1 {
